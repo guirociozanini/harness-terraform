@@ -4,13 +4,13 @@ variable "secret_key" {}
 variable "region" {
   type        = "string"
   description = "AWS Region required by Terraform AWS Provider"
-  default     = "us-east-1"
+  default     = "us-east-2"
   }
 
 variable "s3_bucket_region" {
   type        = "string"
   description = "Region where S3 bucket will be created used to store remote state file"
-  default     = "us-east-1"
+  default     = "us-east-2"
   }
 
 variable "s3_bucket_name" {
