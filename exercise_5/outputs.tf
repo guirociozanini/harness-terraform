@@ -1,5 +1,5 @@
 output "clusterName_1" {
-  value = "${var.ecs-cluster-1}"
+  value = "${var.ecs_cluster_1}"
 }
 
 output "region" {
