@@ -5,7 +5,7 @@ variable "region" {}
 variable "ecs-cluster-1" {}
 
 variable "ecs_security_groups" {
-  default = ["sg-37f61246"]
+  default = ["sg-0ca04f8187695ff21"]
 }
 
 variable "capacity" {
