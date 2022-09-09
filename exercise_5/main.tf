@@ -30,7 +30,7 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
 resource "aws_launch_configuration" "ecs-launch-configuration-1" {
   name                 = "ecs-lb-${var.ecs_cluster_1}"
   image_id             = "ami-0693a7971cd761811"
-  instance_type        = "t2.medium"
+  instance_type        = "t3a.large"
 
   root_block_device {
     volume_type           = "standard"
