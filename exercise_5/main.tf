@@ -7,9 +7,9 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-  bucket = "rc-tf-remote-state-bucket"
+  bucket = "guilhermezanini-terraform-state"
   key = "terraform.tfstate"
-  region = "us-east-1"
+  region = "us-east-2"
   }
 }
 
@@ -40,7 +40,7 @@ resource "aws_ecs_cluster" "ecs-cluster-1" {
     lifecycle {
       create_before_destroy = true
     }
-    security_groups             = ["sg-37f61246"]
+    security_groups             = "${var.ecs_security_groups}"
     associate_public_ip_address = "true"
     key_name                    = "harness-delegate"
     user_data                   = <<EOF
