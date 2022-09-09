@@ -44,7 +44,7 @@ resource "aws_launch_configuration" "ecs-launch-configuration-1" {
 
   security_groups             = "${var.ecs_security_groups}"
   associate_public_ip_address = "true"
-  key_name                    = "harness-delegate"
+  key_name                    = "guiherme-zanini"
 
   user_data = <<EOF
 #!/bin/bash
