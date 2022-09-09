@@ -29,7 +29,7 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
 
 resource "aws_launch_configuration" "ecs-launch-configuration-1" {
   name                 = "ecs-lb-${var.ecs_cluster_1}"
-  image_id             = "ami-0b9a214f40c38d5eb"
+  image_id             = "ami-0693a7971cd761811"
   instance_type        = "t2.medium"
   iam_instance_profile = "ecsInstanceRole"
 
