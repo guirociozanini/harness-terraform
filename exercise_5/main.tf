@@ -27,13 +27,6 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
   health_check_type    = "ELB"
 }
 
-resource "random_id" "rng" {
-  keepers = {
-    first = "${timestamp()}"
-  }     
-  byte_length = 8
-}
-
 resource "aws_launch_configuration" "ecs-launch-configuration-1" {
   name                 = "ecs-lb-${var.ecs_cluster_1}-2"
   image_id             = "ami-0abcdc114352bb936"
