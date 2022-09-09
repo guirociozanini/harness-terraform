@@ -22,7 +22,7 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
   max_size             = "4"
   min_size             = "1"
   desired_capacity     = "${var.capacity}"
-  vpc_zone_identifier  = ["subnet-0bacaae249a2fd391", "subnet-0bacaae249a2fd391"]
+  vpc_zone_identifier  = ["subnet-026e04562162bacab", "subnet-03816d9872e0dbc21"]
   launch_configuration = "${aws_launch_configuration.ecs-launch-configuration-1.name}"
   health_check_type    = "ELB"
 }
