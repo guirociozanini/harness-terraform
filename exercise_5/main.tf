@@ -35,7 +35,7 @@ resource "random_id" "rng" {
 }
 
 resource "aws_launch_configuration" "ecs-launch-configuration-1" {
-  name                 = "ecs-lb-${var.ecs_cluster_1}-${random_id.rng.hex}"
+  name                 = "ecs-lb-${var.ecs_cluster_1}-2"
   image_id             = "ami-0abcdc114352bb936"
   instance_type        = "t3a.large"
 
