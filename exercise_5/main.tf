@@ -29,7 +29,7 @@ resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
 
 resource "aws_launch_configuration" "ecs-launch-configuration-1" {
   name                 = "ecs-lb-${var.ecs_cluster_1}-3"
-  image_id             = "ami-0abcdc114352bb936"
+  image_id             = "ami-0eafd402dc2e09f81"
   instance_type        = "t3a.large"
   iam_instance_profile = "Delegaterole"
 
